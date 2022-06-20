@@ -12,7 +12,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/dashboard.css" />
 
     <link rel="manifest" href="manifest.json" />
     <!-- ios support -->
@@ -25,7 +25,24 @@
     <link rel="apple-touch-icon" href="images/icons/icon-384x384.png" />
     <link rel="apple-touch-icon" href="images/icons/icon-512x512.png" /> -->
     <meta name="apple-mobile-web-app-status-bar" content="#db4938" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <meta name="theme-color" content="#db4938" />
 
     <title>Carnet de bord Tremplin</title>
@@ -34,26 +51,125 @@
 <body>
     <main>
         <nav>
-            <h1>Ma journée</h1>
             <ul>
                 <li>
+                    <div>
+                        <a href="./index.html">
+                            <img height="125" width="125" src="./images/home.svg" alt="tremplin-home">
+                        </a>
+                        <p class="message-bienvenue">Bonjour! Nous sommes Mercredi !</p>
 
-                    <a href="./index.html">Mon carnet</a>
+                    </div>
+
                 </li>
-                <li>
+                <li class="nav-link">
+                    <a href="./journee.html">
+                        <img src="./images/treasure.svg" alt="tremplin-defis">
+                    </a>
 
-                    <a href="./journee.html">Ma journée</a>
                 </li>
-                <li>
-                    <a href="./defis.html">Liste des défis</a>
-
+                <li class="nav-link">
+                    <img src="./images/onboarding.svg" alt="tremplin-help">
                 </li>
             </ul>
         </nav>
-        <div class="">
-            <h1>Bonjour, nous sommes Lundi</h1>
+
+        <div class="defi">
+            <div class="defi-message">
+                <p>Il te reste<strong> 2 défis à faire</strong></p>
+            </div>
+        </div>
+
+        <div class="defi-liste">
+            <div class="parent">
+                <div class="div1">
+                    <div class="card-activite">
+                        <div class="car-activite-body">
+                            <p class="card-activite-text">
+                                Activité du jour
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="div2">
+                    <div class="card-activite">
+                        <div class="car-activite-body">
+                            <p class="card-activite-text">
+                                Défis
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="div3">
+                    <div class="card-activite">
+                        <div class="car-activite-body">
+                            <p class="card-activite-text">
+                                Village commun
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="div4">
+                    <div class="card-activite">
+                        <div class="car-activite-body">
+                            <p class="card-activite-text">
+                                Ta maison
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="div5">
+                    <div class="card-activite">
+                        <div class="car-activite-body">
+                            <p class="card-activite-text">
+                                Prend ta photo
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="div6">
+                    <div class="card-activite">
+                        <div class="car-activite-body">
+                            <p class="card-activite-text">
+                                Album commun
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="div7">
+                    <div class="card-activite">
+                        <div class="car-activite-body">
+                            <p class="card-activite-text">
+                                Annuaire
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="div8">
+                    <div class="card-activite">
+                        <div class="car-activite-body">
+                            <p class="card-activite-text">
+                                Pour tous
+                                </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
 
         </div>
+
+
+        <div>
+
+        </div>
+
+
+
+
+
+
     </main>
     <script src="js/app.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
