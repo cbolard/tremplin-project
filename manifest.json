@@ -1,6 +1,6 @@
 {
-    "name": "Dev'Coffee",
-    "short_name": "DevCoffee",
+    "name": "Tremplin'App",
+    "short_name": "TremplinApp",
     "start_url": "index.html",
     "display": "standalone",
     "background_color": "#fdfdfd",

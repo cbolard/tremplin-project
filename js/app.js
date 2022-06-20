@@ -13,9 +13,6 @@ const coffees = [
     { name: "Accusantium", image: "images/coffee9.jpg" },
 ]
 
-
-
-
 const showCoffees = () => {
     let output = ""
     coffees.forEach(
