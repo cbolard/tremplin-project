@@ -29,34 +29,3 @@ const showCoffees = () => {
 }
 
 document.addEventListener("DOMContentLoaded", showCoffees)
-
-console.log("navigator : ", navigator)
-console.log("mediaDevices : ", navigator.mediaDevices)
-
-
-    if ('mediaDevices' in navigator && 'getUserMedia' in navigator.mediaDevices) {
-        console.log("Let's get this party started")
-        // alert("working")
-        navigator.mediaDevices.getUserMedia(
-            {
-                video: {
-                  width: {
-                    min: 1280,
-                    ideal: 1920,
-                    max: 2560,
-                  },
-                  height: {
-                    min: 720,
-                    ideal: 1080,
-                    max: 1440
-                  },
-                  facingMode: 'environment',
-                }
-              }
-        )
-        
-      } else {
-        console.log('getUserMedia() is not supported by your browser');
-        alert("not working")
-    }
-  
