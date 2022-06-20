@@ -29,3 +29,16 @@ const showCoffees = () => {
 }
 
 document.addEventListener("DOMContentLoaded", showCoffees)
+
+console.log("navigator : ", navigator)
+console.log("mediaDevices : ", navigator.mediaDevices)
+
+
+    if ('mediaDevices' in navigator && 'getUserMedia' in navigator.mediaDevices) {
+        console.log("Let's get this party started")
+        alert("working")
+      } else {
+        console.log('getUserMedia() is not supported by your browser');
+        alert("not working")
+    }
+  
