@@ -1,7 +1,9 @@
-const staticDevCoffee = "tremplin-app-v1"
+const staticTremplin = "tremplin-app-v1"
 const assets = [
   "/",
   "/index.html",
+  "/defis.html",
+  "/journee.html",
   "/css/style.css",
   "/js/app.js",
   "/images/coffee1.jpg",
@@ -17,7 +19,7 @@ const assets = [
 
 self.addEventListener("install", installEvent => {
   installEvent.waitUntil(
-    caches.open(staticDevCoffee).then(cache => {
+    caches.open(staticTremplin).then(cache => {
       cache.addAll(assets)
     })
   )
@@ -34,7 +36,7 @@ self.addEventListener("fetch", fetchEvent => {
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", function() {
     navigator.serviceWorker
-      .register("/serviceWorker.js")
+      .register("./serviceWorker.js")
       .then(res => console.log("service worker registered"))
       .catch(err => console.log("service worker not registered", err))
   })
