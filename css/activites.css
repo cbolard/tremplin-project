@@ -9,18 +9,15 @@ and (orientation : landscape) { } */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #F6F6F6;
 }
 body {
   background: #fdfdfd;
   font-family: "Asap", sans-serif;
- 
   /* font-size: 35px; */
 }
 main {
-  padding-right: 50px;
-  padding-left: 50px;
-
+  margin-left: 50px;
+  margin-right: 50px;
   /* margin-top: 45px; */
   text-align: center;
 }
@@ -31,12 +28,11 @@ main {
   font-size: 35px;
   padding-left: 36px;
   margin-top: 25px;
-  text-align: initial;
 }
 
 .nav-menu {
   display: grid;
-  padding-left: 245px;
+  padding-left: 530px;
   grid-template-columns: 1fr 1fr;
 }
 
@@ -71,6 +67,10 @@ h1 {
   margin-bottom: 0.5rem;
 }
 
+h2 {
+    text-align: left;
+}
+
 .nav-home{
   display: grid;
   grid-template-columns: 125px 1fr;
@@ -83,70 +83,32 @@ h1 {
   width: 125px;
 }
 
-.defi {
-  margin-top: 85px;
-}
-
-.defi-message {
-  border: solid 2px #231f20;
-  border-radius: 40px;
-  font-size: 35px;
-  padding: 40px;
-  color: #231f20;
-}
-
-
-.defi-liste-message {
-  border: solid 2px #231f20;
-  border-radius: 20px;
-  font-size: 35px;
-  padding: 40px;
-  color: #231f20;
-}
-
-
-.defi-liste {
-  margin-top: 85px;
-  /* display: flex; */
-}
-
-.parent {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
-  
-  }
-  
-
-
-  .card-activite {
-    border: solid 2px #231f20;
-    border-radius: 40px;
-    font-size: 20px;
-    padding: 16px;
-    color: #231f20;
-  }
-  .card-activite-body {
+.lundi {
     display: grid;
-    /* grid-template-columns: repeat(2, 1fr); */
-    grid-template-columns: 125px 1fr;
-      
+    grid-template-columns: 1fr 1fr 1fr;
+}
 
-  }
+.lundi-act {
+    width: 409px;
+    height: 369px;
+    margin-top: 25px;
+    border: #000 solid 1px;
+    border-radius: 40px;
+}
 
-  .card-activite-content1 { grid-area: 1 / 1 / 2 / 2; }
-  .card-activite-content2 { grid-area: 1 / 2 / 2 / 3; }
-
-  .card-activite-text{
-    font-weight: 700;
-    margin-left: 36px;
+.titre-act {
     margin-top: 40px;
-    text-align: initial;
-    font-size: 25px;
-  }
+}
 
+.spacer-150 {
+    margin-top: 150px;
+}
+
+.semaine-act{
+    width: 100%;
+    height: 369px;
+    border-radius: 40px;
+}
 
 
 

@@ -31,7 +31,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
@@ -47,16 +48,49 @@
     <title>Carnet de bord Tremplin</title>
 </head>
 
+
+
 <body>
+    <div id="mySidenav" class="sidenav">
+
+        <div class="center-text">
+            <h2  style="background: white;">Thomas D.</h2>
+            <h3 style="background: white;">Le photographe</h3>
+        </div>
+
+        <div class="icon-group">
+            <a class="home-icon" href="./index.html">
+                <img height="125" width="125" src="./images/home.svg" alt="tremplin-home">
+            </a>
+            <a class="home-icon" href="./defis.html">
+                <img src="./images/coffre-open.svg" alt="tremplin-defis">
+            </a> <a class="home-icon" class="menu-nav">
+                <img src="./images/onboarding.svg" alt="tremplin-help">
+            </a>
+
+        </div>
+
+        <div class="bottom-sidebar">
+            <div style="font-size: 30px; padding: 45px; background-color: #F1AE9C;">
+                Il te reste <span  style="font-weight: 700; color: red; background-color: transparent;" class="color-strong">
+                    2 défis</span> à faire !
+                </div>
+            
+        </div>
+    </div>
+
+
+
     <main>
-        <nav>
+
+        <!-- <nav>
             <ul>
                 <li>
                     <div class="nav-home">
                         <a class="home-icon" href="./index.html">
                             <img height="125" width="125" src="./images/home.svg" alt="tremplin-home">
                         </a>
-                        <p class="message-bienvenue">Bonjour! Nous sommes Mercredi!</p>
+                        <p class="message-bienvenue">Bonjour! Nous sommes Mercredi !</p>
 
                     </div>
 
@@ -73,16 +107,16 @@
                     </li>
                 </div>
             </ul>
-        </nav>
+        </nav> -->
 
-        <div class="defi">
+        <!-- <div class="defi">
             <div class="defi-message">
                 <p>Il te reste<strong> 2 défis à faire !</strong></p>
             </div>
-        </div>
+            <h2>Bonjour Thomas</h2>
+            <h3>Nous sommes mercredi</h3>
+        </div> -->
 
-        <!-- <h2>Bonjour Thomas</h2>
-        <h3>Nous sommes mercredi</h3> -->
 
         <div class="defi-liste">
             <div class="parent">
@@ -176,11 +210,6 @@
         <div>
 
         </div>
-
-
-
-
-
 
     </main>
     <script src="js/app.js"></script>
