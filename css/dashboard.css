@@ -138,7 +138,7 @@ h1 {
 .card-activite-text {
   font-weight: 700;
   margin-left: 36px;
-  margin-top: 40px;
+  margin-top: 30px;
   text-align: initial;
   font-size: 25px;
 }
@@ -150,7 +150,7 @@ h1 {
   z-index: 1;
   top: 0;
   left: 0;
-  border: 2px solid #231f20;
+  /* border: 2px solid #231f20; */
   padding-top: 75px;
   background: white;
   /* padding-top: 60px; */
@@ -178,4 +178,11 @@ h1 {
 .spacer-50 {
   margin-top: 50px;
 }
+
+.topbar{
+  display: flex;
+  place-content: space-between;
+}
+
+
 

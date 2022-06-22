@@ -1,31 +1,58 @@
 /* For general iPad layouts */
 @import url("https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap");
 
-
-@media only screen 
+/* @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
-and (orientation : portrait) { /* STYLES GO HERE */ }
-
-
+and (orientation : landscape) { } */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
-  background: #fdfdfd;
-  font-family: "Nunito", sans-serif;
-  font-size: 1rem;
+  font-family: "Asap", sans-serif;
+  background-color: #f6f6f6 !important;
+  /* font-size: 35px; */
 }
+
 main {
-  max-width: 900px;
-  margin: auto;
-  padding: 0.5rem;
+  padding-right: 50px;
+  padding-left: 350px;
+  /* background-color: azure; */
+  /* margin-top: 45px; */
+  padding-top: 70px;
+  background-color: #f6f6f6;
   text-align: center;
 }
+.message-bienvenue {
+  display: inline-block;
+  font-weight: 700;
+  color: #000;
+  font-size: 35px;
+  padding-left: 36px;
+  margin-top: 25px;
+  text-align: initial;
+}
+
+.nav-menu {
+  display: grid;
+  padding-left: 245px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.menu-nav {
+  padding-right: 30px;
+}
+
+p {
+  margin-bottom: 0 !important;
+  /* font-size: 35px; */
+}
+
 nav {
   display: flex;
+  margin-top: 45px;
   justify-content: space-between;
   align-items: center;
 }
@@ -34,51 +61,160 @@ ul {
   display: flex;
 }
 
-li {
+/* li {
   margin-right: 1rem;
-}
+} */
+
 h1 {
   color: #e74c3c;
   margin-bottom: 0.5rem;
 }
 
-.container {
+.nav-home {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  grid-gap: 1rem;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  padding: 1rem 0;
+  grid-template-columns: 125px 1fr;
 }
-.card {
+
+.home-icon {
+  display: inline-block;
+  text-align: left;
+  width: 125px;
+}
+
+.defi {
+  margin-top: 85px;
+  background: white;
   display: flex;
-  align-items: center;
-  flex-direction: column;
-  width: 15rem auto;
-  height: 15rem;
-  background: #fff;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  border-radius: 10px;
-  margin: auto;
-  overflow: hidden;
+  justify-content: space-between;
+  text-align: left;
+  padding: 30px;
+  border: 2px solid #000;
+  border-radius: 8px;
+  margin-top: 35px !important;
+  /* height: 100px; */
+  font-size: 25px;
 }
-.card--avatar {
-  width: 100%;
-  height: 10rem;
-  object-fit: cover;
+.defi-done {
+  margin-top: 85px;
+  background: #eee;
+  color: #231F20 ;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  padding: 30px;
+  border: 2px solid #000;
+  border-radius: 8px;
+  margin-top: 35px !important;
+  /* height: 100px; */
+  font-size: 25px;
 }
-.card--title {
-  color: #222;
-  font-weight: 700;
-  text-transform: capitalize;
-  font-size: 1.1rem;
-  margin-top: 0.5rem;
+
+.defi-message {
+  border: solid 2px #231f20;
+  border-radius: 40px;
+  font-size: 35px;
+  padding: 40px;
+  color: #231f20;
 }
-.card--link {
-  text-decoration: none;
-  background: #db4938;
-  color: #fff;
-  padding: 0.3rem 1rem;
+
+.defi-liste-message {
+  border: solid 2px #231f20;
   border-radius: 20px;
+  font-size: 35px;
+  padding: 40px;
+  color: #231f20;
+}
+
+.defi-liste {
+  margin-top: 85px;
+  /* display: flex; */
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.card-activite {
+  border: solid 2px #231f20;
+  border-radius: 40px;
+  font-size: 20px;
+  padding: 16px;
+  color: #231f20;
+}
+.card-activite-body {
+  display: grid;
+  /* grid-template-columns: repeat(2, 1fr); */
+  grid-template-columns: 125px 1fr;
+}
+
+.card-activite-content1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.card-activite-content2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.card-activite-text {
+  font-weight: 700;
+  margin-left: 36px;
+  margin-top: 40px;
+  text-align: initial;
+  font-size: 25px;
+}
+
+
+.container-defi {
+  /* display: grid;
+  grid-template-rows: 3fr 1fr; */
+}
+
+.topbar{
+  display: flex;
+  place-content: space-between;
+}
+
+.sidenav {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  padding-top: 75px;
+  background: white;
+  /* padding-top: 60px; */
+}
+
+.center-text {
+  text-align: center;
+}
+
+.icon-group {
+  display: block;
+  text-align: center;
+  margin: 90px;
+}
+
+.home-icon {
+  display: block;
+}
+
+.bottom-sidebar {
+  bottom: 0;
+  position: absolute;
+}
+
+.spacer-50 {
+  margin-top: 50px;
+}
+
+textarea {
+  width: 100%;
+  padding: 25px;
+  font-size: 25px;
+
 }

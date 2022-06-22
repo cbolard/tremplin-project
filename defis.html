@@ -6,14 +6,8 @@
 
     <link rel="manifest" href="manifest.json" />
     <!-- ios support -->
-    <!-- <link rel="apple-touch-icon" href="images/icons/icon-72x72.png" />
-    <link rel="apple-touch-icon" href="images/icons/icon-96x96.png" />
-    <link rel="apple-touch-icon" href="images/icons/icon-128x128.png" />
-    <link rel="apple-touch-icon" href="images/icons/icon-144x144.png" />
-    <link rel="apple-touch-icon" href="images/icons/icon-152x152.png" />
-    <link rel="apple-touch-icon" href="images/icons/icon-192x192.png" />
-    <link rel="apple-touch-icon" href="images/icons/icon-384x384.png" />
-    <link rel="apple-touch-icon" href="images/icons/icon-512x512.png" /> -->
+    <link rel="apple-touch-icon" href="images/icons/tremplin-logo.jpg" />
+
     <meta name="apple-mobile-web-app-status-bar" content="#db4938" />
 
     <!-- FONTS -->
@@ -45,17 +39,23 @@
     <div id="mySidenav" class="sidenav">
 
         <div class="center-text">
-            <h2 >Thomas D.</h2>
-            <h3 >Le photographe</h3>
+            <h2>Thomas D.</h2>
+            <h3>Le photographe</h3>
         </div>
 
         <div class="icon-group">
             <a class="home-icon spacer-50" href="./index.html">
-                <img height="125" width="125" src="./images/home.svg" alt="tremplin-home">
+                <img src="./images/account.svg" alt="tremplin-home">
             </a>
-            <a class="home-icon spacer-50" href="./defis.html">
-                <img src="./images/coffre-open.svg" alt="tremplin-defis">
+
+            <a class="home-icon spacer-50" class="menu-nav">
+                <img src="./images/tableau.svg" alt="tremplin-help">
             </a>
+
+            <a class="home-icon spacer-50" href="./defis.html" class="menu-nav">
+                <img src="./images/coffre.svg" alt="tremplin-help">
+            </a>
+
             <a class="home-icon spacer-50" class="menu-nav">
                 <img src="./images/onboarding.svg" alt="tremplin-help">
             </a>
@@ -64,52 +64,104 @@
 
         <div class="bottom-sidebar">
             <div style="font-size: 30px; padding: 45px; background-color: #F1AE9C;">
-                Il te reste <span  style="font-weight: 700; color: red; background-color: transparent;" class="color-strong">
+                Il te reste <span style="font-weight: 700; color: red; background-color: transparent;"
+                    class="color-strong">
                     2 défis</span> à faire !
-                </div>
-            
+            </div>
+
         </div>
     </div>
 
     <main>
-
+        <div class="topbar">
+            <a href="./index.html">
+                <img src="./images/back.svg" alt="" srcset="">
+            </a>
+            <div>
+                <img src="./images/profil.svg" alt="" srcset="">
+            </div>
+            </div>
 
         <div class="container-defi">
 
             <div>
+                <div style="margin: auto; padding: 20px;">
+                    <img id="changeTreasure" src="./images/treasure-bar.svg" width="300" alt="" srcset="">
+                </div>
 
+                <div class="defi">
+                    <div>
+                        <h1>Photo</h1>
+                    
+                        <p>
+                            Prendre une photo de ton activité ou du lieu durant la journée.
+                        </p>
+                    </div>
 
-                <div class="defi">
-                    <h1>Photo</h1>
-                    <p>
-                        Prendre une photo de ton activité ou du lieu durant la journée.
-                    </p>
+                    <div>
+                        <img  id="change" src="./images/next.svg" alt="" srcset="">
+                    </div>
+           
                 </div>
                 <div class="defi">
-                    <h1>Album Commun</h1>
-                    <p>
-                        Ajoute une photo, vidéo ou un message vocal à l’album commun.
-                    </p>
+                    <div>
+                        <h1>Album Commun</h1>
+                        <p>
+                            Ajoute une photo, vidéo ou un message vocal à l’album commun.
+                        </p>
+
+                    </div>
+
+                    <div>
+                        <img src="./images/next.svg" alt="" srcset="">
+                    </div>
+                
                 </div>
-                <div class="defi">
-                    <h1>Village Commun</h1>
-                    <p>
-                        Utilise un badge dans le village commun.
-                    </p>
+                <div class="defi-done">
+
+                    <div>
+                        <h1>Village Commun</h1>
+                        <p>
+                            Utilise un badge dans le village commun.
+                        </p>
+                    </div>
+
+                    <div>
+                        <img src="./images/check.svg" alt="" srcset="">
+                    </div>
+                  
                 </div>
-                <div class="defi">
-                    <h1>Notes</h1>
-                    <p>
-                        Remplir les notes de la journée.
-                    </p>
+                <div class="defi-done">
+
+                    <div>
+                        <h1>Notes</h1>
+                        <p>
+                            Remplir les notes de la journée.
+                        </p>
+                    </div>
+
+                    <div>
+                        <img src="./images/check.svg" alt="" srcset="">
+                    </div>
+             
                 </div>
 
             </div>
 
-            <div style="margin: auto; padding: 20px;">
-                <img src="./images/treasure-bar.svg" width="300" alt="" srcset="">
-            </div>
+  
 
         </div>
     </main>
+
+
+    <script>
+        let el = document.querySelector('.defi')
+        el.addEventListener('click', function() {
+            el.className="defi-done"
+            document.getElementById('change').src = "./images/check.svg"
+            document.getElementById('changeTreasure').src = "./images/openTreasure.svg"
+
+        })
+
+    </script>
 </body>

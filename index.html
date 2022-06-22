@@ -16,14 +16,7 @@
 
     <link rel="manifest" href="manifest.json" />
     <!-- ios support -->
-    <!-- <link rel="apple-touch-icon" href="images/icons/icon-72x72.png" />
-    <link rel="apple-touch-icon" href="images/icons/icon-96x96.png" />
-    <link rel="apple-touch-icon" href="images/icons/icon-128x128.png" />
-    <link rel="apple-touch-icon" href="images/icons/icon-144x144.png" />
-    <link rel="apple-touch-icon" href="images/icons/icon-152x152.png" />
-    <link rel="apple-touch-icon" href="images/icons/icon-192x192.png" />
-    <link rel="apple-touch-icon" href="images/icons/icon-384x384.png" />
-    <link rel="apple-touch-icon" href="images/icons/icon-512x512.png" /> -->
+    <link rel="apple-touch-icon" href="images/icons/tremplin-logo.jpg" />
     <meta name="apple-mobile-web-app-status-bar" content="#db4938" />
 
     <!-- FONTS -->
@@ -31,7 +24,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
@@ -52,17 +46,23 @@
     <div id="mySidenav" class="sidenav">
 
         <div class="center-text">
-            <h2 >Thomas D.</h2>
-            <h3 >Le photographe</h3>
+            <h2>Thomas D.</h2>
+            <h3>Le photographe</h3>
         </div>
 
         <div class="icon-group">
             <a class="home-icon spacer-50" href="./index.html">
-                <img height="125" width="125" src="./images/home.svg" alt="tremplin-home">
+                <img src="./images/account.svg" alt="tremplin-home">
             </a>
-            <a class="home-icon spacer-50" href="./defis.html">
-                <img src="./images/coffre-open.svg" alt="tremplin-defis">
+
+            <a class="home-icon spacer-50"  href="./tableau.html" class="menu-nav">
+                <img src="./images/tableau.svg" alt="tremplin-help">
             </a>
+
+            <a class="home-icon spacer-50" href="./defis.html" class="menu-nav">
+                <img src="./images/coffre.svg" alt="tremplin-help">
+            </a>
+
             <a class="home-icon spacer-50" class="menu-nav">
                 <img src="./images/onboarding.svg" alt="tremplin-help">
             </a>
@@ -71,46 +71,28 @@
 
         <div class="bottom-sidebar">
             <div style="font-size: 30px; padding: 45px; background-color: #F1AE9C;">
-                Il te reste <span  style="font-weight: 700; color: red; background-color: transparent;" class="color-strong">
+                Il te reste <span style="font-weight: 700; color: red; background-color: transparent;"
+                    class="color-strong">
                     2 défis</span> à faire !
-                </div>
-            
+            </div>
+
         </div>
     </div>
 
 
 
     <main>
-        <!-- <nav>
-            <ul>
-                <li>
-                    <div class="nav-home">
-                        <a class="home-icon" href="./index.html">
-                            <img height="125" width="125" src="./images/home.svg" alt="tremplin-home">
-                        </a>
-                        <p class="message-bienvenue">Bonjour! Nous sommes Mercredi!</p>
+        <div class="topbar">
+            <div>
+                <h2 style="text-align: left;">Bonjour M.Backtis</h2>
+                <h3 style="text-align: left;">Nous sommes vendredi !</h3>
+            </div>
+            <a href="./profil.html">
+                <img src="./images/profil.svg" alt="" srcset="">
+            </a>
 
-                    </div>
+        </div>
 
-                </li>
-                <div class="nav-menu">
-                    <li class="menu-nav">
-                        <a href="./defis.html">
-                            <img src="./images/coffre-open.svg" alt="tremplin-defis">
-                        </a>
-
-                    </li>
-                    <li class="menu-nav">
-                        <img src="./images/onboarding.svg" alt="tremplin-help">
-                    </li>
-                </div>
-            </ul>
-        </nav> -->
-
-
-
-        <h2>Bonjour M.Backtis</h2>
-        <h3>Nous sommes mercredi</h3>
 
         <div class="defi-liste">
             <div class="parent">
@@ -119,42 +101,22 @@
                         <div class="card-activite-body">
                             <img src="./images/icons/calendar-icon.svg" alt="tremplin-calendar">
                             <p class="card-activite-text">
-                                Gérer les activités
+                                Activités de la semaine
                             </p>
                         </div>
                     </div>
                 </a>
-                <a href ="./defis.html" class="div2">
+                <a href="./defis.html" class="div2">
                     <div class="card-activite">
                         <div class="card-activite-body">
                             <img src="./images/icons/star-icon.svg" alt="tremplin-calendar">
                             <p class="card-activite-text">
-                                Relève tes défis
+                                Défis
                             </p>
                         </div>
                     </div>
                 </a>
-                <a href="./village.html" class="div3">
-                    <div  class="card-activite">
-                        <div class="card-activite-body">
-                            <img src="./images/icons/map-icon.svg" alt="tremplin-calendar">
-                            <p class="card-activite-text">
-                                Pour regarder votre village
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a class="div4">
-                    <div class="card-activite">
-                        <div class="card-activite-body">
-                            <img src="./images/icons/home-icon.svg" alt="tremplin-calendar">
-                            <p class="card-activite-text">
-                                Tableau
-                            </p>
-                        </div>
-                    </div>
-                </a>
-                <a class="div5">
+                <a href="./tableau.html" class="div3">
                     <div class="card-activite">
                         <div class="card-activite-body">
                             <img src="./images/icons/photo-icon.svg" alt="tremplin-calendar">
@@ -164,7 +126,7 @@
                         </div>
                     </div>
                 </a>
-                <a class="div6">
+                <a class="div4">
                     <div class="card-activite">
                         <div class="card-activite-body">
                             <img src="./images/icons/album-icon.svg" alt="tremplin-calendar">
@@ -174,16 +136,39 @@
                         </div>
                     </div>
                 </a>
-                <a class="div7">
+                <a  href="./tableau.html" class="div5">
                     <div class="card-activite">
                         <div class="card-activite-body">
-                            <img src="./images/icons/contact-icon.svg" alt="tremplin-calendar">
+                            <img src="./images/icons/tableau-icon.svg" alt="tremplin-calendar">
                             <p class="card-activite-text">
-                                Les stagiaires
+                                Tableau
                             </p>
                         </div>
                     </div>
                 </a>
+                <a href="./annuaire.html" class="div6">
+
+                    <div class="card-activite">
+                        <div class="card-activite-body">
+                            <img src="./images/icons/annuaire-icon.svg" alt="tremplin-calendar">
+                            <p class="card-activite-text">
+                                Annuaire
+                            </p>
+                        </div>
+                    </div>
+
+                </a>
+                <a class="div7">
+                    <div class="card-activite">
+                        <div class="card-activite-body">
+                            <img src="./images/icons/access-icon.svg" alt="tremplin-calendar">
+                            <p class="card-activite-text">
+                                Pour tous
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <!-- 
                 <a class="div8">
                     <div class="card-activite">
                         <div class="card-activite-body">
@@ -193,7 +178,7 @@
                             </p>
                         </div>
                     </div>
-                </a>
+                </a> -->
 
             </div>
 
