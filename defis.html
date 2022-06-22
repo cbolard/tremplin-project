@@ -80,7 +80,7 @@
             <div>
                 <img src="./images/profil.svg" alt="" srcset="">
             </div>
-            </div>
+        </div>
 
         <div class="container-defi">
 
@@ -92,18 +92,18 @@
                 <div class="defi">
                     <div>
                         <h1>Photo</h1>
-                    
+
                         <p>
                             Prendre une photo de ton activité ou du lieu durant la journée.
                         </p>
                     </div>
 
                     <div>
-                        <img  id="change" src="./images/next.svg" alt="" srcset="">
+                        <img id="change" src="./images/next.svg" alt="" srcset="">
                     </div>
-           
+
                 </div>
-                <div class="defi">
+                <div class="defi defi2">
                     <div>
                         <h1>Album Commun</h1>
                         <p>
@@ -113,9 +113,9 @@
                     </div>
 
                     <div>
-                        <img src="./images/next.svg" alt="" srcset="">
+                        <img id="change2" src="./images/next.svg" alt="" srcset="">
                     </div>
-                
+
                 </div>
                 <div class="defi-done">
 
@@ -129,7 +129,7 @@
                     <div>
                         <img src="./images/check.svg" alt="" srcset="">
                     </div>
-                  
+
                 </div>
                 <div class="defi-done">
 
@@ -143,25 +143,42 @@
                     <div>
                         <img src="./images/check.svg" alt="" srcset="">
                     </div>
-             
+
                 </div>
 
             </div>
 
-  
+
 
         </div>
     </main>
 
 
     <script>
+        let count = 0
         let el = document.querySelector('.defi')
-        el.addEventListener('click', function() {
-            el.className="defi-done"
+        el.addEventListener('click', function () {
+            el.className = "defi-done"
             document.getElementById('change').src = "./images/check.svg"
-            document.getElementById('changeTreasure').src = "./images/openTreasure.svg"
+            count++
+            if (count == 2) {
+                document.getElementById('changeTreasure').src = "./images/openTreasure.svg"
+            }
 
         })
+        let el2 = document.querySelector('.defi2')
+        el2.addEventListener('click', function () {
+            el2.className = "defi-done"
+            document.getElementById('change2').src = "./images/check.svg"
+            count++
+            console.log(count)
+            if (count == 2) {
+                document.getElementById('changeTreasure').src = "./images/openTreasure.svg"
+            }
+
+        })
+
+
 
     </script>
 </body>
