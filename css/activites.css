@@ -167,6 +167,7 @@ h1 {
   left: 0;
   padding-top: 75px;
   background: white;
+  font-weight: 700;
   /* padding-top: 60px; */
 }
 
@@ -177,7 +178,9 @@ h1 {
 .icon-group {
   display: block;
   text-align: center;
-  margin: 90px;
+  margin: 30px 90px;
+  font-size: 18px;
+  text-align: center;
 }
 
 .home-icon {

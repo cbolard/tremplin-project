@@ -78,15 +78,10 @@ h1 {
   width: 125px;
 }
 
-
-
-
-
 .topbar{
   display: flex;
   place-content: space-between;
 }
-
 
 .sidenav {
   height: 100%;
@@ -95,9 +90,9 @@ h1 {
   z-index: 1;
   top: 0;
   left: 0;
-  /* border: 2px solid #231f20; */
   padding-top: 75px;
   background: white;
+  font-weight: 700;
   /* padding-top: 60px; */
 }
 
@@ -108,7 +103,9 @@ h1 {
 .icon-group {
   display: block;
   text-align: center;
-  margin: 90px;
+  margin: 30px 90px;
+  font-size: 18px;
+  text-align: center;
 }
 
 .home-icon {
