@@ -171,6 +171,7 @@
         el.addEventListener('click', function () {
             el.className = "defi-done"
             document.getElementById('change').src = "./images/check.svg"
+            document.getElementById('change').style.marginTop = "0px"
             count++
             if (count == 2) {
                 document.getElementById('changeTreasure').src = "./images/openTreasure.svg"
@@ -181,8 +182,9 @@
         el2.addEventListener('click', function () {
             el2.className = "defi-done"
             document.getElementById('change2').src = "./images/check.svg"
+            document.getElementById('change2').style.marginTop = "0px"
+          
             count++
-            console.log(count)
             if (count == 2) {
                 document.getElementById('changeTreasure').src = "./images/openTreasure.svg"
             }
