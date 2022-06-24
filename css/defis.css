@@ -170,6 +170,7 @@ h1 {
 .container-defi {
   /* display: grid;
   grid-template-rows: 3fr 1fr; */
+  margin-bottom: 60px;
 }
 
 .topbar{

@@ -66,8 +66,9 @@ h1 {
 
 .tableau-img {
   position: absolute;
-    top: 45px;
+    top: 59px;
     left: 300px;
+    z-index: -1;
 }
 
 .nav-home {
